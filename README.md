@@ -2,7 +2,7 @@
 
 A generic modern carousel solution for various use cases.
 
-[![View Demo](https://img.shields.io/badge/LIVE_DEMO-FF6B6B?style=for-the-badge)](https://vercel.com/gomehmichaels-projects/Reeco-Michael_Gomeh-Senior-FE-Task)
+[![View Demo](https://img.shields.io/badge/LIVE_DEMO-FF6B6B?style=for-the-badge)](https://reeco-michael-gomeh-senior-fe-task.vercel.app/)
 # 🌟 Overview
 
 <div align="center">
