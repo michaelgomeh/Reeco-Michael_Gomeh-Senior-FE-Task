@@ -3,8 +3,7 @@
 A generic modern carousel solution for various use cases.
 
 [![View Demo](https://img.shields.io/badge/LIVE_DEMO-FF6B6B?style=for-the-badge)](https://vercel.com/gomehmichaels-projects/Reeco-Michael_Gomeh-Senior-FE-Task)
-
-## 🌟 Overview
+# 🌟 Overview
 
 <div align="center">
   <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite"/>
@@ -12,7 +11,6 @@ A generic modern carousel solution for various use cases.
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Styled Components"/>
 </div>
-## 🎮 Features Overview
 
 - **🧭 Easy Navigation** - Context-aware arrows with auto-hide logic
 - **🎚 Dual Scroll Modes** - Pixel-perfect scrolling & item snapping
