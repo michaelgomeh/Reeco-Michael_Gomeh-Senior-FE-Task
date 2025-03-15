@@ -59,6 +59,9 @@ const Slider = <T,>({
 		sliderRef,
 		step,
 		handleKeydown,
+		handleTouchEnd,
+		handleTouchMove,
+		handleTouchStart,
 	} = useSlider({
 		items,
 		itemWidth,
@@ -80,6 +83,9 @@ const Slider = <T,>({
 			onKeyDown={handleKeydown}
 			$isHorizontal={isHorizontal}
 			$height={height}
+			onTouchStart={handleTouchStart}
+			onTouchMove={handleTouchMove}
+			onTouchEnd={handleTouchEnd}
 		>
 			{currentIndex > 0 && (
 				<PrevButton

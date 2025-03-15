@@ -19,6 +19,7 @@ const useSlider = <T>({
 	>(undefined);
 	const [visibleItems, setVisibleItems] = useState(0);
 	const sliderRef = useRef<HTMLDivElement | null>(null);
+	const touchStartRef = useRef<number | null>(null);
 
 	const isHorizontal = useMemo(
 		() => orientation === 'horizontal',
@@ -54,6 +55,32 @@ const useSlider = <T>({
 
 		if (['ArrowRight', 'ArrowDown'].includes(e.code)) step(1);
 		if (['ArrowLeft', 'ArrowUp'].includes(e.code)) step(-1);
+	};
+
+	const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+		e.preventDefault();
+		const touchStart = isHorizontal
+			? e.touches[0].clientX
+			: e.touches[0].clientY;
+		touchStartRef.current = touchStart;
+	};
+
+	const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+		if (!touchStartRef.current) return;
+		e.preventDefault();
+		const touchMove = isHorizontal
+			? e.touches[0].clientX
+			: e.touches[0].clientY;
+		const touchDiff = touchStartRef.current - touchMove;
+
+		if (Math.abs(touchDiff) > 50) {
+			step(touchDiff > 0 ? 1 : -1);
+			touchStartRef.current = null;
+		}
+	};
+
+	const handleTouchEnd = () => {
+		touchStartRef.current = null;
 	};
 
 	const slide = useCallback(
@@ -107,6 +134,9 @@ const useSlider = <T>({
 		sliderRef,
 		step,
 		handleKeydown,
+		handleTouchStart,
+		handleTouchMove,
+		handleTouchEnd,
 	};
 };
 
