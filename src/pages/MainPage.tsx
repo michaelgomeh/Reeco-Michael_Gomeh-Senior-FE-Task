@@ -16,6 +16,9 @@ const AppContainer = styled.div`
 const HorizontalContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 const MainPage = () => {
