@@ -2,7 +2,7 @@
 
 A generic modern carousel solution for various use cases.
 
-[![View Demo](https://img.shields.io/badge/LIVE_DEMO-FF6B6B?style=for-the-badge)](https://reeco-michael-gomeh-senior-fe-task.vercel.app/)
+[![View Demo](https://img.shields.io/badge/LIVE_DEMO-FF6B6B?style=for-the-badge)](https://carousel-slider-michaelgomeh.vercel.app/)
 # 🌟 Overview
 
 <div align="center">
@@ -32,7 +32,7 @@ A generic modern carousel solution for various use cases.
 1. **Clone & Install**
 
    ```bash
-   git clone https://github.com/michaelgomeh/Reeco-Michael_Gomeh-Senior-FE-Task.git
+   git clone https://github.com/michaelgomeh/carousel-slider.git
    npm install
    ```
 
